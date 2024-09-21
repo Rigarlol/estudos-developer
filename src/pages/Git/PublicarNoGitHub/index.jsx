@@ -8,6 +8,16 @@ const ContainerPrincipal = styled.section`
 
 const ContainerPublicacoes = styled.div`
     margin: 30px 0px;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 5px 0px;
+    }
+
 `
 
 export default function PublicarNoGitHub() {
