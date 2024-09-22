@@ -19,6 +19,10 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
     }
 
+    ul {
+        list-style: none;
+    }
+
     h1 {
         font-size: 2em;
         margin: 0.67em 0;
