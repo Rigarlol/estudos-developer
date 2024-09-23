@@ -86,7 +86,7 @@ export default function SideBar() {
             <Container>
                 <NavEstilizado>
                     <ul>
-                        <LiEstilizado>
+                        <LiEstilizado>  {/*GIT*/}
                             <TopicoStyled>GIT</TopicoStyled>
                             <ContainerTopico>
                                 <LinhaVertical />
@@ -99,12 +99,21 @@ export default function SideBar() {
                                         assunto="Comandos do GIT"
                                         referencia="/ComandosGit"
                                     />
-
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>
+
                         <LiEstilizado>
-                            <TopicoStyled>HTML</TopicoStyled>
+                            <TopicoStyled>CSS</TopicoStyled>
+                            <ContainerTopico>
+                                <LinhaVertical />
+                                <ul>
+                                    <ListaDeAssuntos 
+                                        assunto="Display flex"
+                                        referencia="/ComandosGit"
+                                    />
+                                </ul>
+                            </ContainerTopico>
                         </LiEstilizado>
                     </ul>
                 </NavEstilizado>
