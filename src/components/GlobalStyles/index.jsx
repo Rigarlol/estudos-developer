@@ -24,9 +24,23 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 22px; /* 24px */
+        line-height: 2rem; /* 32px */
         margin: 0.67em 0;
+
     }
+
+    h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 28px;
+        color: #C4C4CC;
+    }
+
+    
 
     hr {
         box-sizing: content-box; 
@@ -77,6 +91,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     img {
         border-style: none;
+        max-width: 100%;   
+        height: auto;      
     }
 
     button,

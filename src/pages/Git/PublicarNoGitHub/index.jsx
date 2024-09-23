@@ -10,12 +10,15 @@ const ContainerPublicacoes = styled.div`
     margin: 30px 0px;
 
     h2 {
-        font-size: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.75rem;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         margin: 5px 0px;
+        color: #C4C4CC;
     }
 
 `

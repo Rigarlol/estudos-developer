@@ -15,12 +15,33 @@ const Container = styled.div`
 
 // Estilo para a barra lateral
 const ContainerSideBar = styled.div`
-    width: 20%;
+    width: 300px;
+    min-width: 200px;
     background-color: #121212;
     color: white;
     height: 100vh;
     padding: 20px;
     overflow-y: scroll;
+
+    /* Estilos para esconder o scroll no Firefox */
+    //scrollbar-width: none; /* Remove o scroll padrão em Firefox */
+
+    &::-webkit-scrollbar {
+    width: 5px; /* Barra fina */
+    }
+
+    &::-webkit-scrollbar-track {
+    background: transparent; /* Invisível por padrão */
+    }
+
+    &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); /* Scroll claro com baixa opacidade */
+    border-radius: 4px; /* Cantos arredondados */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Mais visível ao interagir */
+    }
 `;
 
 // Estilo para o container de cada tópico
@@ -80,6 +101,7 @@ export default function SideBar() {
                                         assunto="Comandos do GIT"
                                         referencia="/PublicarNoGitHub"
                                     />
+                                    
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>
