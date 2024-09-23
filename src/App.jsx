@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import PublicarNoGitHub from "./pages/Git/PublicarNoGitHub"
 import SideBar from "./components/Sidebar"
 import Header from "./components/Header"
+import ComandosGit from "./pages/Git/ComandosGit"
 
 
 const Layout = styled.div`
@@ -13,8 +14,9 @@ const Layout = styled.div`
 const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
   flex: 1;
+  overflow-y: auto;
+  padding-top: 4rem;
 `;
 
 
@@ -28,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/PublicarNoGitHub" element={<PublicarNoGitHub />} />
+            <Route path="/ComandosGit" element={<ComandosGit />}/>
           </Routes>
         </Container>
       </Layout>

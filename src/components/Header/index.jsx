@@ -3,7 +3,7 @@ import styled from "styled-components"
 const HeaderContainer = styled.header`
     position: fixed;
     top: 0;
-    left: 18rem; 
+    left: 18.8rem; 
     right: 0;
     height: 56px;
     z-index: 50;
@@ -14,6 +14,7 @@ const HeaderContainer = styled.header`
     color: rgba(33, 33, 33, 1);
     background-color: transparent;
     border: 1px solid #241C38;
+    backdrop-filter: blur(6px);
 `
 
 export default function Header() {

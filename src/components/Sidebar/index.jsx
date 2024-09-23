@@ -3,17 +3,14 @@ import styled from "styled-components";
 import Logo from '../../assets/logoOne.svg';
 import ListaDeAssuntos from "../ListaAssuntos";
 
-// Estilo para a div que contém o logo
 const DivLogo = styled.div`
     margin-bottom: 1.5rem;
 `;
 
-// Estilo para o container geral
 const Container = styled.div`
     padding: 4% 0%;
 `;
 
-// Estilo para a barra lateral
 const ContainerSideBar = styled.div`
     width: 300px;
     min-width: 200px;
@@ -21,59 +18,60 @@ const ContainerSideBar = styled.div`
     color: white;
     height: 100vh;
     padding: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
 
-    /* Estilos para esconder o scroll no Firefox */
     //scrollbar-width: none; /* Remove o scroll padrão em Firefox */
 
     &::-webkit-scrollbar {
-    width: 5px; /* Barra fina */
+    width: 5px; 
     }
 
     &::-webkit-scrollbar-track {
-    background: transparent; /* Invisível por padrão */
+    background: 'transparent'; 
     }
 
     &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2); /* Scroll claro com baixa opacidade */
-    border-radius: 4px; /* Cantos arredondados */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px; 
     }
 
     &::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Mais visível ao interagir */
+    background-color: rgba(255, 255, 255, 0.5); 
     }
 `;
 
-// Estilo para o container de cada tópico
+
 const ContainerTopico = styled.div`
     padding-left: 0.5rem;
     margin-top: 0.75rem;
     position: relative;
 `;
 
-// Estilo para o título do tópico
+
 const TopicoStyled = styled.h3`
     font-size: 0.75rem;
     line-height: 1rem;
     font-weight: 600;
 `;
 
-// Estilo para a linha vertical
+
 const LinhaVertical = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 8px;  /* Equivalente a left-2 (8px) */
-    width: 1px; /* Define a largura da linha */
-    background-color: rgba(95, 93, 101, 0.961); /* bg-gray-900/10 no modo claro */
+    left: 8px;  
+    width: 1px; 
+    background-color: rgba(95, 93, 101, 0.961);  
 `;
 
-// Estilo para o componente de navegação
+
 const NavEstilizado = styled.nav`
     margin-top: 2.5rem;
 `;
 
-// Estilo para cada item de lista
+
 const LiEstilizado = styled.li`
     margin-top: 24px;
     position: relative;
@@ -83,7 +81,7 @@ export default function SideBar() {
     return (
         <ContainerSideBar>
             <DivLogo>
-                <img src={Logo} alt="Logo" />
+                <Link to="/"><img src={Logo} alt="Logo" /></Link>
             </DivLogo>
             <Container>
                 <NavEstilizado>
@@ -99,9 +97,9 @@ export default function SideBar() {
                                     />
                                     <ListaDeAssuntos
                                         assunto="Comandos do GIT"
-                                        referencia="/PublicarNoGitHub"
+                                        referencia="/ComandosGit"
                                     />
-                                    
+
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>

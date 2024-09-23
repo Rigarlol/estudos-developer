@@ -50,6 +50,7 @@ export default function PublicarNoGitHub() {
                         git push -u origin main
 `}
                 </CodeStyle>
+
             </ContainerPublicacoes>
         </ContainerPrincipal>
     )
