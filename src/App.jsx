@@ -5,6 +5,8 @@ import PublicarNoGitHub from "./pages/Git/PublicarNoGitHub"
 import SideBar from "./components/Sidebar"
 import Header from "./components/Header"
 import ComandosGit from "./pages/Git/ComandosGit"
+import UnidadesDeMedida from "./pages/Css/UnidadesDeMedida"
+import ImagemDeFundo from "./pages/Css/BackgroundImage"
 
 
 const Layout = styled.div`
@@ -31,6 +33,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/PublicarNoGitHub" element={<PublicarNoGitHub />} />
             <Route path="/ComandosGit" element={<ComandosGit />}/>
+            <Route path="/unidades-de-medida" element={<UnidadesDeMedida />}/>
+            <Route path="/background-image" element={<ImagemDeFundo />}/>
           </Routes>
         </Container>
       </Layout>

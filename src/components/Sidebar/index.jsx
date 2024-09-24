@@ -103,18 +103,35 @@ export default function SideBar() {
                             </ContainerTopico>
                         </LiEstilizado>
 
-                        <LiEstilizado>
+                        <LiEstilizado>  {/*CSS*/}
                             <TopicoStyled>CSS</TopicoStyled>
                             <ContainerTopico>
                                 <LinhaVertical />
                                 <ul>
-                                    <ListaDeAssuntos 
-                                        assunto="Display flex"
-                                        referencia="/ComandosGit"
+                                    <ListaDeAssuntos
+                                        assunto="Unidades de medida"
+                                        referencia="/unidades-de-medida"
                                     />
+
+                                    <ListaDeAssuntos
+                                        assunto="Background-Image"
+                                        referencia="/background-image"
+                                    />
+
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>
+
+                        <LiEstilizado>  {/*JavaScript*/}
+                            <TopicoStyled>JavaScript</TopicoStyled>
+                            <ContainerTopico>
+                                <LinhaVertical />
+                                <ul>
+
+                                </ul>
+                            </ContainerTopico>
+                        </LiEstilizado>
+
                     </ul>
                 </NavEstilizado>
             </Container>

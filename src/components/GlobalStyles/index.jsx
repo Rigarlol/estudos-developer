@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
     body {
         min-height: 100vh;
         background-color: #121212;
+        background-image: url('../../../public/bg.png');
+        background-position: top center; /* Centraliza a imagem horizontalmente e a coloca no topo verticalmente */
+        background-size: auto; /* Mantém o tamanho original da imagem */
+        background-repeat: no-repeat;
     }
 
     main {

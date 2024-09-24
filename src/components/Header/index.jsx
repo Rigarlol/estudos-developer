@@ -15,6 +15,8 @@ const HeaderContainer = styled.header`
     background-color: transparent;
     border: 1px solid #241C38;
     backdrop-filter: blur(6px);
+    //colocando a sombra 
+    box-shadow: 1px 11px 20px 20px #2b1f423e
 `
 
 export default function Header() {
