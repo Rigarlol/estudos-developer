@@ -5,25 +5,25 @@ import styled from "styled-components";
 
 
 const CustomSyntaxHighlighter = styled(SyntaxHighlighter)`
-  background-color: #2d2d2d !important;  /* Fundo escuro personalizado */
+  background-color: #2d2d2d !important; 
   padding: 20px;
   border-radius: 8px;
   font-size: 1rem;
   font-family: 'Courier New', Courier, monospace;
-  overflow-x: auto; /* Caso o código seja muito longo */
+  overflow-x: auto; 
   color: #f8f8f2;
   max-width: 600px;
 
   code {
-    color: #f8f8f2;  /* Personalizando cor do texto */
+    color: #f8f8f2;  
   }
 
-  /* Opcionalmente, você pode alterar cores específicas aqui */
+  
   span.token.function {
-    color: #66d9ef; /* Cor da função */
+    color: #66d9ef; 
   }
   span.token.string {
-    color: #a6e22e; /* Cor de strings */
+    color: #a6e22e; 
   }
 `;
 

@@ -118,6 +118,11 @@ export default function SideBar() {
                                         referencia="/background-image"
                                     />
 
+                                    <ListaDeAssuntos
+                                        assunto="Transition"
+                                        referencia="/transition"
+                                    />
+
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>

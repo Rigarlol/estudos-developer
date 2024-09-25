@@ -34,42 +34,98 @@ export default function ImagemDeFundo() {
                 <CodeStyle language="css">
                     {` element  {
             background-image: url('caminho/para/a-imagem.jpg');
-            }
+        }
 `}
                 </CodeStyle>
             </ContainerPublicacoes>
 
             <ContainerPublicacoes>
-                <h2>em </h2>
-                <CodeStyle language="css">font-size: 1em;</CodeStyle>
-                <p>Baseado no tamanho da fonte do elemento pai.</p>
-                <p>Exemplo: Se o tamanho da fonte do elemento pai é 16px, 1em equivale a 16px.</p>
-                <p>Usado para definir espaçamentos (margem, padding) ou tamanhos de fontes de forma flexível, adaptando-se ao contexto.
-                </p>
+                <h2>Ajustando o Tamanho e Posição da Imagem</h2>
+                <p>Você pode usar outras propriedades para ajustar o comportamento da imagem de fundo:</p>
+                <h2>Cobrir Toda a Área (background-size)</h2>
+                <CodeStyle language="css">
+                    {` element  {
+            background-image: url('caminho/para/a-imagem.jpg');
+            background-size: cover;
+        }
+`}
+                </CodeStyle>
+                <p><span>cover:</span> Faz com que a imagem cubra todo o elemento, ajustando suas proporções.</p>
             </ContainerPublicacoes>
 
             <ContainerPublicacoes>
-                <h2>rem</h2>
-                <CodeStyle language="css">font-size: 1rem;</CodeStyle>
-                <p>Baseado no tamanho da fonte da raiz ({"<html>"}).</p>
-                <p>Exemplo: Se o tamanho da fonte do {"<html>"}é 16px, 1rem equivale a 16px.</p>
-                <p>Usado de forma semelhante ao em, mas garante consistência, já que sempre faz referência à raiz do documento.</p>
+                <h2>Exibir a Imagem Completa (background-size)</h2>
+                <p>Para mostrar a imagem inteira, mesmo que isso deixe espaços ao redor, use background-size: contain;</p>
+                <CodeStyle language="css">
+                    {` element  {
+            background-image: url('caminho/para/a-imagem.jpg');
+            background-size: contain;
+        }
+`}
+                </CodeStyle>
+                <p><span>contain:</span> Garante que a imagem inteira apareça, mas pode deixar espaços.</p>
             </ContainerPublicacoes>
 
             <ContainerPublicacoes>
-                <h2>vw (viewport width)</h2>
-                <CodeStyle language="css">width: 100vw;</CodeStyle>
-                <p>1 vw equivale a 1% da largura da janela de visualização (viewport).</p>
-                <p>Exemplo: 100vw é 100% da largura da tela.</p>
-                <p>Usado para ajustar dimensões com base no tamanho da tela do usuário.</p>
+                <h2>Repetir ou Não Repetir a Imagem (background-repeat)</h2>
+                <p>Você pode controlar a repetição da imagem com a propriedade background-repeat:</p>
+                <p><span>repeat:</span> A imagem se repetirá tanto horizontalmente quanto verticalmente (padrão).</p>
+                <p><span>no-repeat:</span> Não repete a imagem.</p>
+                <p><span>repeat-x:</span> Repete a imagem apenas na horizontal.</p>
+                <p><span>repeat-y:</span> Repete a imagem apenas na vertical.</p>
+                <CodeStyle language="css">
+                    {` element  {
+            background-image: url('caminho/para/a-imagem.jpg');
+            background-size: no-repeat;
+        }
+`}
+                </CodeStyle>
             </ContainerPublicacoes>
 
             <ContainerPublicacoes>
-                <h2>vh (viewport height)</h2>
-                <CodeStyle language="css">height: 100vh;</CodeStyle>
-                <p>1 vh equivale a 1% da altura da janela de visualização.</p>
-                <p>Exemplo: 100vh é 100% da altura da tela.</p>
-                <p>Útil para layouts que precisam ocupar a altura completa da tela.</p>
+                <h2>Posicionamento da Imagem (background-position)</h2>
+                <p>A posição da imagem pode ser ajustada com a propriedade background-position:</p>
+                <CodeStyle language="css">
+                    {` element  {
+            background-image: url('caminho/para/a-imagem.jpg');
+            background-position: center; 
+        }
+`}
+                </CodeStyle>
+                <p>Outras opções de posição: <span>top, bottom, left, right,</span> ou até valores percentuais como <span>50% 50%</span>.</p>
+            </ContainerPublicacoes>
+
+            <ContainerPublicacoes>
+                <h2>Fixar ou Rolagem da Imagem (background-attachment)</h2>
+                <p>A propriedade <span>background-attachment</span> controla se a imagem de fundo rola com o conteúdo da página:</p>
+                <p><span>scroll:</span> A imagem de fundo rola junto com o conteúdo (padrão).</p>
+                <p><span>fixed:</span> A imagem de fundo fica fixa enquanto o conteúdo rola.</p>
+                <CodeStyle language="css">
+                    {` element  {
+            background-image: url('caminho/para/a-imagem.jpg');
+            background-attachment: fixed;
+        }
+`}
+                </CodeStyle>
+            </ContainerPublicacoes>
+
+            <ContainerPublicacoes>
+                <h2>Exemplo completo:</h2>
+                <CodeStyle language="css">
+                    {` body  {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+`}
+                </CodeStyle>
+                <p>Nesse exemplo, a imagem de fundo:</p>
+                <p>Cobre toda a página</p>
+                <p>Não se repete</p>
+                <p>Fica centralizada</p>
+                <p>E permanece fixa ao rolar o conteúdo</p>
             </ContainerPublicacoes>
 
         </ContainerPrincipal>

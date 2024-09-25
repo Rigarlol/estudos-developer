@@ -16,15 +16,21 @@ const HeaderContainer = styled.header`
     border: 1px solid #241C38;
     backdrop-filter: blur(6px);
     //colocando a sombra 
-    box-shadow: 1px 11px 20px 20px #2b1f423e
+    box-shadow: 1px 11px 20px 20px #2b1f423e;
+`
+const Linha = styled.div`
+    //colocando uma linha 
+    border-bottom: 1px solid #241C38;   
 `
 
 export default function Header() {
     return (
-        <HeaderContainer>
-            <h1>Bem vindos</h1>
-            <h1>Grande Rota</h1>
-        </HeaderContainer>
+        <div>
+            <HeaderContainer>
+                <h1>Bem vindos</h1>
+                <h1>Grande Rota</h1>
+            </HeaderContainer>
+        </div>
         
     )
 }
