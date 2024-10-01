@@ -7,7 +7,8 @@ import Header from "./components/Header"
 import ComandosGit from "./pages/Git/ComandosGit"
 import UnidadesDeMedida from "./pages/Css/UnidadesDeMedida"
 import ImagemDeFundo from "./pages/Css/BackgroundImage"
-import TransitionCSS from "./pages/Css/Transition"
+import TransitionCSS from "./pages/Css/Transition"    
+import AnimationScrollJs from "./pages/Css/AnimatonScrollJsCss"
 
 
 const Layout = styled.div`
@@ -37,6 +38,7 @@ function App() {
             <Route path="/unidades-de-medida" element={<UnidadesDeMedida />}/>
             <Route path="/background-image" element={<ImagemDeFundo />}/>
             <Route path="/transition" element={<TransitionCSS />}/>
+            <Route path="/animationscrollJs"element={<AnimationScrollJs/>}/>
           </Routes>
         </Container>
       </Layout>

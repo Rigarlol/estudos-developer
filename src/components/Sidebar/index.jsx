@@ -123,6 +123,7 @@ export default function SideBar() {
                                         referencia="/transition"
                                     />
 
+
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>
@@ -132,7 +133,10 @@ export default function SideBar() {
                             <ContainerTopico>
                                 <LinhaVertical />
                                 <ul>
-
+                                    <ListaDeAssuntos
+                                        assunto="AnimationScroll com JS e CSS"
+                                        referencia="/animationscrollJs"
+                                    />
                                 </ul>
                             </ContainerTopico>
                         </LiEstilizado>
