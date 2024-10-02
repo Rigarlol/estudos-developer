@@ -8,7 +8,9 @@ import ComandosGit from "./pages/Git/ComandosGit"
 import UnidadesDeMedida from "./pages/Css/UnidadesDeMedida"
 import ImagemDeFundo from "./pages/Css/BackgroundImage"
 import TransitionCSS from "./pages/Css/Transition"    
-import AnimationScrollJs from "./pages/Css/AnimatonScrollJsCss"
+import AnimationScrollJs from "./pages/JavaScript/AnimatonScrollJsCss"
+import AnimationScrollReact from "./pages/ReactJS/AnimationScrollReactJS"
+
 
 
 const Layout = styled.div`
@@ -39,6 +41,7 @@ function App() {
             <Route path="/background-image" element={<ImagemDeFundo />}/>
             <Route path="/transition" element={<TransitionCSS />}/>
             <Route path="/animationscrollJs"element={<AnimationScrollJs/>}/>
+            <Route path="/animationscrollreact"element={<AnimationScrollReact />}/>
           </Routes>
         </Container>
       </Layout>

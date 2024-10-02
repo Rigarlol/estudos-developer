@@ -138,6 +138,19 @@ export default function SideBar() {
                                         referencia="/animationscrollJs"
                                     />
                                 </ul>
+                              </ContainerTopico>
+                        </LiEstilizado>
+
+                        <LiEstilizado>  {/*React JS*/}
+                            <TopicoStyled>ReactJS</TopicoStyled>
+                            <ContainerTopico>
+                                <LinhaVertical />
+                                <ul>
+                                    <ListaDeAssuntos
+                                        assunto="AnimationScroll com GSAP"
+                                        referencia="/animationscrollreact"
+                                    />
+                                </ul>
                             </ContainerTopico>
                         </LiEstilizado>
 
